@@ -1,4 +1,13 @@
-alert('Hello world');
+var repository={
+  {name:'bulbasaur',
+  height: 0.7,
+  types: ['grass','poison']},
 
-var favoritefood = 'Pasta';
-document.write(favoritefood);
+  {name:'charmander',
+  height: 0.6,
+  types: 'grass'},
+
+  {name:'squirtle',
+  height: 0.5,
+  types: 'water'}
+}
