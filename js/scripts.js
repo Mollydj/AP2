@@ -18,4 +18,4 @@ const repository = [
 
 Object.keys(repository).forEach(function(property) {
   document.write(JSON.stringify(repository[property]));
-});
+}); 
