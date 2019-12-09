@@ -1,4 +1,4 @@
-var repository = [
+const repository = [
   {
     name: 'Bulbasaur',
     height: 0.7,
@@ -16,12 +16,6 @@ var repository = [
   }
 ]
 
-for (var i = 0; i < repository.length; i++) {
-  if(repository[i].height >1) {
-    console.log(repository[i].height = (repository[i].height) + ' - Wow! Thats Big!)');
-  } else{
-    console.log(repository[i].height = (repository[i].height) + ') ');
-  }
-  document.write(repository[i].name + ' ' + '(height: ' + repository[i].height + ' ' + repository[i].types)
-  document.write('<br>');
-}
+Object.keys(repository).forEach(function(property) {
+  document.write(JSON.stringify(repository[property]));
+});
