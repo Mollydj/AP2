@@ -16,6 +16,11 @@ const repository = [
   }
 ]
 
-Object.keys(repository).forEach(function(property) {
-  document.write(JSON.stringify(repository[property]));
-}); 
+//index in the array
+repository.forEach (arrayItem =>
+
+//keys from each index
+Object.keys(arrayItem).forEach(keys =>
+
+//For each index in the array, write all the properties
+document.write(arrayItem[keys])))
