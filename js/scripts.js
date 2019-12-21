@@ -1,4 +1,5 @@
-const repository = [
+var pokemonRepository = (function () {
+var repository = [
   {
     name: 'Bulbasaur',
     height: 0.7,
@@ -14,13 +15,27 @@ const repository = [
     height: 0.5,
     types: 'Water'
   }
-]
+];
 
-//index in the array
-repository.forEach (arrayItem =>
+  function add(pokemon) {
+    repository.push(pokemon);
+  }
 
-//keys from each index
-Object.keys(arrayItem).forEach(keys =>
+  function getAll() {
+    return repository;
+  }
 
-//For each index in the array, write all the properties
-document.write(arrayItem[keys])))
+  return {
+    add: add,
+    getAll: getAll
+  };
+})();
+
+
+
+pokemonRepository.add({ name: 'Pikachu' });
+/*console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]*/
+
+Object.keys(pokemonRepository.getAll()).forEach(function(property) {
+  console.log(pokemonRepository.getAll()[property]);
+});
