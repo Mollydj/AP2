@@ -17,18 +17,14 @@ var repository = [
     add: add,
     getAll: getAll
   };
+
 })();
 
 
 
-pokemonRepository.add({ name: 'Pikachu' });
-//console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' }
-
-
-Object.keys(pokemonRepository.getAll()).forEach(function(property) {
-  document.write(pokemonRepository.getAll()[property].name + ' ');
-  document.write(pokemonRepository.getAll()[property].height + ' ');
-  document.write(pokemonRepository.getAll()[property].types + ' ');
-    document.write('<br>')
-   document.write('<br>')
-});
+pokemonRepository.getAll().forEach(function(arrayItem) {
+     Object.keys(arrayItem).forEach(function(key){
+         document.write(arrayItem[key])
+     })
+ document.write('<br>')
+})
