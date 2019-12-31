@@ -1,0 +1,17 @@
+.pokemon-name {
+  list-style-type: none;
+  display: block;
+}
+
+.pokemon-list {
+  list-style-type: none;
+}
+
+.li {
+  list-style-type: none;
+  display: block;
+}
+
+.button {
+  list-style-type: none;
+}
