@@ -13,11 +13,11 @@ var pokemonRepository = (function () {
     button.innerText = pokemon.name;
     button.classList.add('pokemon-name');
     listItem.appendChild(button);
-    $pokemonList.appendChild(listItem); 
+    $pokemonList.appendChild(listItem);
 
 //Event Listener here
     button.addEventListener('click', function () {
-      showDetails(pokemon);
+      showDetails(pokemon.name);
     });
   }
   //< End of Button and List Information
