@@ -78,7 +78,7 @@ var pokemonRepository = (function () {
     showDetails: showDetails,
     loadList: loadList,
     loadDetails: loadDetails,
-  };
+  }
 })();
 
 var $pokemonList = document.querySelector('ul');
